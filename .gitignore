@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Data files (keep structure, ignore large data)
+projects/*/data/*.db
+projects/*/data/*.db-wal
+projects/*/data/*.db-shm
+projects/*/data/raw/*
+!projects/*/data/raw/.gitkeep
+projects/*/data/exports/*
+!projects/*/data/exports/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment
+.env
+.env.local
+*.env

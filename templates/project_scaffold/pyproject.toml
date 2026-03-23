@@ -1,0 +1,29 @@
+[project]
+name = "project-slug"
+version = "0.1.0"
+description = "A structured data product"
+requires-python = ">=3.12"
+
+dependencies = [
+    "click>=8.1",
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    "pydantic>=2.0",
+    "streamlit>=1.30",
+    "plotly>=5.18",
+    "pandas>=2.1",
+    "openpyxl>=3.1",
+    "rapidfuzz>=3.5",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.1",
+]
+
+[project.scripts]
+cli = "src.cli:main"
